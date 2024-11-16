@@ -5,7 +5,7 @@
 }
 body{
     background-color: #2F1893 ;
-    padding: 30px 80px;
+    padding: 30px 130px;
     font-family: "DM Sans", sans-serif;
     font-size: 24px;
 }
@@ -53,11 +53,101 @@ body{
 }
 main{
     display: flex;
+    padding-top: 3rem ;
+    align-items: center;
 }
 .section-right, .section-left{
-    width: 45rem;
-    border: 1px solid greenyellow;
+    width: 100%;
 }
+.section-h2{
+    font-size: 58px;
+    color: #ffffff;
+    width: 80%;
+    padding-bottom: 20px;
+}
+.section-left p{
+    font-size: 22px;
+    color: #ffffff;
+    width: 350px;
+    padding-bottom: 30px;
+}
+
+form{
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #EBEAED;
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 85%;
+}
+
+form h2{
+    font-size: 42px;
+    color: #1E0E62;
+}
+.input{
+    width: 100%;
+    border: 2px solid #EBEAED;
+    border-radius: 100px;
+    background-color: inherit;
+    padding: 15px 20px;
+    outline: none;
+    
+}
+input::placeholder{
+    font-size: 18px;
+    color: #15143966;
+}
+
+.section-right{
+    display: flex;
+    justify-content: flex-end;
+}
+label{
+    font-size: 16px;
+    color:#15143966;
+}
+.Sbtn{
+    background-color: #482BE7;
+    border-radius: 100px;
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.Lbtn{
+    background-color: #1DA1F2;
+    border-radius: 100px;
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.do{
+    color: #15143966;
+    font-size: 18px;
+}
+#sign{
+    font-size: 18px;
+    color: #25DAC5;
+    padding-left: 10px;
+}
+.rule{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+hr{
+    border: 2px solid#EBEAED;
+    height: fit-content;
+    width: 100%;
+}
+
+
 
 
 
@@ -65,11 +155,15 @@ main{
     body{
         padding: 30px;
     }
+    form{
+        width: 100%;
+        padding: 2.5rem;
+    }
 }
 
 @media (max-width: 600px) {
     body{
-        padding: 10px;
+        padding: 30px 15px;
     }
 
     .right-header{
@@ -78,5 +172,27 @@ main{
 
     .Awesome-header i {
         display: block;
+    }
+    main{
+        flex-direction: column;
+    }
+    .section-h2{
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    .section-left p{
+        width: 100%;
+        font-size: 17px;
+    }
+    main{
+        gap: 20px;
+    }
+    form{
+        width: 100%;
+        padding: 20px;
+    }
+    form h2{
+        font-size: 30px;
     }
 }
